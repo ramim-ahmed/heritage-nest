@@ -14,8 +14,12 @@ export default function Banner() {
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black to-transparent"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black bg-opacity-50 space-y-3">
-        <h1 className="text-[64px] font-bold">Your Portal to India&#39;s </h1>
-        <h1 className="text-[64px] font-bold">Exquisite Real Estate </h1>
+        <h1 className="lg:text-[64px] md:text-[40px] text-[28px] font-bold">
+          Your Portal to India&#39;s{" "}
+        </h1>
+        <h1 className="lg:text-[64px] md:text-[40px] text-[28px] font-bold">
+          Exquisite Real Estate{" "}
+        </h1>
         <p className="">
           Seamlessly connecting you to the heartbeat of India&rsquo;s prime
           properties.

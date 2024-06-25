@@ -9,9 +9,9 @@ import {
 } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className={`${montserrat.className} bg-[#ECF5FF] py-10 `}>
+    <footer className={`${montserrat.className} bg-[#ECF5FF] mt-10 py-10 px-3`}>
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-7 pb-5 gap-6">
+        <div className="grid lg:grid-cols-7 md:grid-cols-3 grid-cols-1  pb-5 gap-6">
           <div className="col-span-2">
             <div>
               <Image src={logo} alt="logo" className="w-16" />
