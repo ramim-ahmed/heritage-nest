@@ -3,6 +3,7 @@ import logo from "../public/assets/logo.png";
 import { montserrat } from "@/app/layout";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import NavLink from "./NavLink";
 export default function Nav() {
   return (
     <div className={` ${montserrat.className} bg-[#ECF5FF] py-2 border-b`}>
@@ -10,9 +11,7 @@ export default function Nav() {
         <div className="flex justify-between items-center">
           <div>
             <ul className="flex items-center space-x-5">
-              <Link href="/buy">
-                <li>Buy</li>
-              </Link>
+              <NavLink path="/buy" level="Buy" />
               <Link href="/sell">
                 <li>Sell</li>
               </Link>

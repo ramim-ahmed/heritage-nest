@@ -11,6 +11,17 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { IoSearchSharp } from "react-icons/io5";
+import { montserrat } from "../layout";
+import Property from "@/components/Property";
+import { properties } from "@/data";
+import { TbMapPin } from "react-icons/tb";
+import { RiHomeLine } from "react-icons/ri";
+import { CiDollar } from "react-icons/ci";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Heritage Nest | Buy",
+  description: "",
+};
 export default function BuyPage() {
   return (
     <div>
@@ -40,7 +51,8 @@ export default function BuyPage() {
             </div>
             <div className="mt-4 grid lg:grid-cols-3 grid-cols-1 gap-6 items-center">
               <div>
-                <div>
+                <div className="space-x-2 flex items-center">
+                  <TbMapPin className="h-6 w-6 space-x-2 text-[#EE6611]" />
                   <h1>Your Location</h1>
                 </div>
                 <div className="mt-2">
@@ -60,7 +72,8 @@ export default function BuyPage() {
               </div>
               {/* Property type */}
               <div>
-                <div>
+                <div className="space-x-2 flex items-center">
+                  <RiHomeLine className="h-6 w-6 space-x-2 text-[#EE6611]" />
                   <h1>Property Type</h1>
                 </div>
                 <div className="mt-2">
@@ -79,7 +92,8 @@ export default function BuyPage() {
                 </div>
               </div>
               <div>
-                <div>
+                <div className="space-x-2 flex items-center">
+                  <CiDollar className="h-6 w-6 space-x-2 text-[#EE6611]" />
                   <h1>Your Budget</h1>
                 </div>
                 <div className="mt-2">
@@ -100,6 +114,43 @@ export default function BuyPage() {
         <div className="pt-10">
           <Statistics />
         </div>
+        <div className={`${montserrat.className} pt-10`}>
+          <div className="flex items-center justify-between">
+            <h1 className="text-[32px] font-semibold">Popular Properties</h1>
+            <Button variant="outline">See all property</Button>
+          </div>
+          <div className="mt-6 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+            {properties.popular.map((item) => (
+              <Property
+                id={item.id}
+                key={item.id}
+                title={item.title}
+                img={item.img}
+                price={item.price}
+                location={item.location}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="pt-10 border-b-2"></div>
+        <div className={`${montserrat.className} pt-10`}>
+          <div className="flex items-center justify-between">
+            <h1 className="text-[32px] font-semibold">New Listed Properties</h1>
+            <Button variant="outline">See all property</Button>
+          </div>
+          <div className="mt-6 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+            {properties.popular.map((item) => (
+              <Property
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                img={item.img}
+                price={item.price}
+                location={item.location}
+              />
+            ))}
+          </div>
+        </div>
         <div className="pt-10">
           <Testimonials />
         </div>
@@ -107,11 +158,15 @@ export default function BuyPage() {
       <div className="bg-[#FDF0E7] py-10">
         <div className="max-w-6xl mx-auto px-3 flex items-center justify-between">
           <div>
-            <h4>Post your Property for free</h4>
-            <p>List it on Your Propriety and get genuine leads</p>
+            <h4 className="text-xl font-semibold text-[#101828]">
+              Post your Property for free
+            </h4>
+            <p className="text-[#475467] mt-1">
+              List it on Your Propriety and get genuine leads
+            </p>
           </div>
           <div>
-            <Button>Post Property</Button>
+            <Button className="bg-[#F06224] text-base">Post Property</Button>
           </div>
         </div>
       </div>
