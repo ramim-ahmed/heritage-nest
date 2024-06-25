@@ -11,7 +11,7 @@ import { Pagination } from "swiper/modules";
 import Image from "next/image";
 export default function Testimonials() {
   return (
-    <div>
+    <div className="pb-10">
       <div>
         <h1 className="text-4xl text-[#181818] font-bold text-center">
           Testimonials

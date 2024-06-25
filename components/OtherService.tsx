@@ -4,7 +4,7 @@ import ServiceItem from "./ServiceItem";
 export default function OtherService() {
   return (
     <div className={`${montserrat.className}`}>
-      <div className="max-w-6xl mx-auto px-3">
+      <div className="max-w-6xl mx-auto px-3 pb-10">
         <h1 className="text-4xl font-semibold pb-10 text-center">
           Other Services
         </h1>
