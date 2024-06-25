@@ -1,6 +1,9 @@
+import BookConsultation from "@/components/BookConsultation";
 import OurMission from "@/components/OurMission";
 import OurStory from "@/components/OurStory";
+import OurTeam from "@/components/OurTeam";
 import Statistics from "@/components/Statistics";
+import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
 import Image from "next/image";
 export const metadata: Metadata = {
@@ -27,6 +30,15 @@ export default function AboutPage() {
         </div>
         <div className="pt-10">
           <OurMission />
+        </div>
+        <div className="pt-10">
+          <OurTeam />
+        </div>
+        <div className="pt-10">
+          <BookConsultation />
+        </div>
+        <div className="pt-14">
+          <Testimonials />
         </div>
       </div>
     </div>
