@@ -11,6 +11,18 @@ import { FaBath } from "react-icons/fa6";
 import { MdBalcony } from "react-icons/md";
 import { GiBunkBeds } from "react-icons/gi";
 import { Metadata } from "next";
+import { LiaSuperpowers } from "react-icons/lia";
+import { GiLift } from "react-icons/gi";
+import { GiFamilyHouse } from "react-icons/gi";
+import { CgGym } from "react-icons/cg";
+import { PiParkLight } from "react-icons/pi";
+import { FaCar } from "react-icons/fa";
+import { GiSecurityGate } from "react-icons/gi";
+import { LuGlassWater } from "react-icons/lu";
+import { TbGardenCart } from "react-icons/tb";
+import { IoDocumentSharp } from "react-icons/io5";
+import { RiCustomerService2Fill } from "react-icons/ri";
+
 export const metadata: Metadata = {
   title: "Heritage Nest | property-details",
   description: "",
@@ -80,8 +92,8 @@ export default function details() {
             </div>
             <div className="border border-gray-300 mt-6 bg-[#f4f4f477] rounded-md p-5">
               <h1 className="text-2xl font-semibold">Overview</h1>
-              <div className="flex justify-between items-center bg-white p-4 mt-6">
-                <div className="flex items-center space-x-2">
+              <div className="flex lg:flex-row flex-col justify-between lg:items-center space-y-4 lg:space-y-0 bg-white p-4 mt-6">
+                <div className="flex  items-center space-x-2">
                   <FaCartFlatbedSuitcase className="h-6 w-6" />
                   <p>
                     <span className="font-bold">2</span> Beds
@@ -107,7 +119,7 @@ export default function details() {
                 </div>
               </div>
               <div className={`${montserrat.className} mt-6`}>
-                <div className="flex justify-between">
+                <div className="flex lg:flex-row flex-col space-y-4 lg:space-y-0 justify-between">
                   <div>
                     <p className="text-[#535353]">Carpet Area</p>
                     <h4 className="text-[#101010] font-medium">2000 sqft</h4>
@@ -130,7 +142,7 @@ export default function details() {
                     <h4 className="text-[#101010] font-medium">1</h4>
                   </div>
                 </div>
-                <div className="flex justify-between mt-6">
+                <div className="flex lg:flex-row flex-col space-y-4 lg:space-y-0 justify-between mt-6">
                   <div>
                     <p className="text-[#535353]">Facing</p>
                     <h4 className="text-[#101010] font-medium">North - East</h4>
@@ -191,6 +203,110 @@ export default function details() {
             </div>
           </div>
         </div>
+        {/* Amenities  */}
+        <div className="border border-gray-300 mt-6 bg-[#f4f4f477] rounded-md p-5">
+          <div className={`${montserrat.className}`}>
+            <h1 className="text-2xl font-semibold">Amenities</h1>
+            <div className="mt-6 grid lg:grid-cols-4 gap-8 md:grid-cols-2 grid-cols-1">
+              <div className="flex items-center space-x-2">
+                <LiaSuperpowers className="w-6 h-6" />
+                <p>Power Back Up</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiLift className="w-6 h-6" />
+                <p>Lift</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiFamilyHouse className="w-6 h-6" />
+                <p>Club House</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CgGym className="w-6 h-6" />
+                <p>Gymnasium</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PiParkLight className="w-6 h-6" />
+                <p>Park</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaCar className="w-6 h-6" />
+                <p>Reversed Parking</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiSecurityGate className="w-6 h-6" />
+                <p>Security</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <LuGlassWater className="w-6 h-6" />
+                <p>Security</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <TbGardenCart className="w-6 h-6" />
+                <p>Private Terrace/Garden</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <IoDocumentSharp className="w-6 h-6" />
+                <p>Vaastu Compliant</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RiCustomerService2Fill className="w-6 h-6" />
+                <p>Service/Goods Lift</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaCar className="w-6 h-6" />
+                <p>Visitor Parking</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <LiaSuperpowers className="w-6 h-6" />
+                <p>Power Back Up</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiLift className="w-6 h-6" />
+                <p>Lift</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiFamilyHouse className="w-6 h-6" />
+                <p>Club House</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CgGym className="w-6 h-6" />
+                <p>Gymnasium</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiFamilyHouse className="w-6 h-6" />
+                <p>Club House</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <CgGym className="w-6 h-6" />
+                <p>Gymnasium</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PiParkLight className="w-6 h-6" />
+                <p>Park</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaCar className="w-6 h-6" />
+                <p>Reversed Parking</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PiParkLight className="w-6 h-6" />
+                <p>Park</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaCar className="w-6 h-6" />
+                <p>Reversed Parking</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <GiSecurityGate className="w-6 h-6" />
+                <p>Security</p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <LuGlassWater className="w-6 h-6" />
+                <p>Security</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={`${montserrat.className}`}>
           <div className="pt-10">
             <h1 className="text-4xl font-semibold pb-10 text-center">
@@ -231,6 +347,9 @@ export default function details() {
               />
             ))}
           </div>
+        </div>
+        <div className="mb-10">
+          <div className="border-b-2"></div>
         </div>
       </div>
     </div>
